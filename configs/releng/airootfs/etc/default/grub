@@ -1,0 +1,2 @@
+GRUB_BACKGROUND="/path/to/your/impulse-os-background.png"
+GRUB_DISTRIBUTOR="Impulse OS"

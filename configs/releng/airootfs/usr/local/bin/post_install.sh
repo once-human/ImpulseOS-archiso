@@ -12,3 +12,4 @@ cp -rf /etc/skel/.config/hypr "$USER_HOME/.config/"
 # Ensure ownership and permissions are correct
 chown -R ${SUDO_USER}:${SUDO_USER} "$USER_HOME/.config/hypr"
 git clone https://github.com/LazyVim/starter ~/.config/nvim
+systemctl enable gdm.service
