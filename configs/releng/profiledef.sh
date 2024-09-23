@@ -29,3 +29,4 @@ run_once=('install-illogical-impulse.sh')
 run_once() {
    /usr/local/bin/post_install.sh
 }
+run_once=('lazyvim.sh')
