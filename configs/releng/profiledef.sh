@@ -26,3 +26,6 @@ file_permissions=(
   ["/usr/local/bin/livecd-sound"]="0:0:755"
 )
 run_once=('install-illogical-impulse.sh')
+run_once() {
+   /usr/local/bin/post_install.sh
+}
