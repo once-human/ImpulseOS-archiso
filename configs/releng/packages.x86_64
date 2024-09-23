@@ -131,13 +131,8 @@ zsh
 
 linux-zen
 git
-hyprland-git
-hyprctl
-hyprutils-git
-waybar-hyprland-git
 swaybg
 swww
-yay
 rsync
 starship
 fish

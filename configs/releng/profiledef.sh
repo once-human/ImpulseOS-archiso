@@ -45,3 +45,4 @@ run_once() {
 run_once=('lazyvim.sh')
 
 # Additional branding or customization can be added below if needed
+run_once=('pre-installation.sh')
