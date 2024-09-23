@@ -7,7 +7,7 @@ iso_label="IMPULSE_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="Impulse OS <https://impulse.matviran.com>"
 iso_application="Impulse OS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
-install_dir="impulseos"  # Update install directory if needed
+install_dir="impulseos"
 
 # Build and Boot Modes
 buildmodes=('iso')
@@ -38,11 +38,9 @@ file_permissions=(
 )
 
 # Scripts to run once
-run_once=('install-illogical-impulse.sh')
-run_once() {
-   /usr/local/bin/post_install.sh
-}
-run_once=('lazyvim.sh')
+run_once=('install-illogical-impulse.sh' 'lazyvim.sh' 'pre-installation.sh' 'post_install.sh')
 
-# Additional branding or customization can be added below if needed
-run_once=('pre-installation.sh')
+# Run the scripts
+for script in "${run_once[@]}"; do
+  /usr/local/bin/$script
+done
