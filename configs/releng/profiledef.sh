@@ -4,7 +4,7 @@
 # Basic ISO Information
 iso_name="impulseos"
 iso_label="IMPULSE_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Impulse OS <https://yourwebsite.com>"
+iso_publisher="Impulse OS <https://impulse.matviran.com>"
 iso_application="Impulse OS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="impulseos"  # Update install directory if needed
