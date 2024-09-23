@@ -32,7 +32,6 @@ f2fs-tools
 fatresize
 foot-terminfo
 fsarchiver
-git
 gnu-netcat
 gpart
 gpm
@@ -52,7 +51,6 @@ less
 lftp
 libfido2
 libusb-compat
-linux
 linux-atm
 linux-firmware
 linux-firmware-marvell
@@ -128,3 +126,17 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+
+
+linux-zen
+git
+hyprland-git
+hyprctl
+hyprutils-git
+waybar-hyprland-git
+swaybg
+swww
+yay
+rsync
+starship
+fish
